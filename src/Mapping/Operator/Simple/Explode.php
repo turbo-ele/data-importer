@@ -45,6 +45,9 @@ class Explode extends AbstractOperator
      */
     public function process($inputData, bool $dryRun = false)
     {
+        if (empty($inputData)) {
+            return [];
+        }
         if (!empty($this->delimiter)) {
             if (is_array($inputData)) {
                 $explodedArray = [];
