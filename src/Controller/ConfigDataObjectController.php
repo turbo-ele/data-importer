@@ -323,7 +323,6 @@ class ConfigDataObjectController extends UserAwareController
                         throw new \Exception('Invalid data preview. Deleted preview data.');
                     }
                     $dataPreviewData = $preview;
-
                 } else {
                     $errorMessage = $translator->trans('plugin_pimcore_datahub_data_importer_configpanel_preview_error_invalid_file', [], 'admin');
                 }
